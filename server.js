@@ -6,7 +6,7 @@ const notes = require('./db/db.json');
 // express server setup
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // middleware
 app.use(express.static('public'));
